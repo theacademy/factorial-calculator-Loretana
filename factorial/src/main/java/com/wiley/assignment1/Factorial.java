@@ -37,7 +37,10 @@ public class Factorial {
 		this.printStream.print("Please enter a number between 1 and 10: ");
 		String input = scanner.nextLine();
 		try {
+			// convert String to int
 			int num = Integer.parseInt(input);
+
+			// validate num range
 			if(num >= 1 && num <= 10) {
 				return num;
 			}
@@ -63,6 +66,8 @@ public class Factorial {
 		 
 		int result = 1;
 		//YOUR CODE STARTS HERE
+
+		 // multiply starting from 1 to num
 		 for(int i = 1; i <= num; i++) {
 			 result *= i;
 		 }
